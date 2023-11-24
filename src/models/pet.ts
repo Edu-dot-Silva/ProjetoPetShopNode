@@ -149,11 +149,12 @@ export const Pets ={
     },
     getFromName:(name:string):Pet[]=>{
         return data.filter(item =>{
-            if(item.name.indexOf(name) > -1){
+            if(item.name.toLowerCase().indexOf(name.toLowerCase()) > -1){
                 return true
             }else{
                 return false
             }
         })
+        
     }
 }

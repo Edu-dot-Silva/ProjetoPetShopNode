@@ -10,3 +10,6 @@ Projeto desenvolvido em NodeJS com Express
 
 ### Para executar o projeto
 `npm run start-dev`
+
+<!-- ![](/public/images/print.png.png) -->
+<!-- comando para mostrar a imagem no readme do projeto no github -->
