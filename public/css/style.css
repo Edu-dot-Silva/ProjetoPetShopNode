@@ -1,8 +1,8 @@
 :root {
-    --pagebg: #FFF;
-    --main: #ff0054;
-    --bglink: rgba(0, 0, 0, 0.3);
-    --darkbg: #FFF;
+    --pagebg: #f9f6ec;
+    --main: #636ab3;
+    --bglink:#8e6f9a;
+    --darkbg: #e67b68;
     --lightbg: #000;
     --lighter: #444;
 }
@@ -19,6 +19,21 @@ body {
     max-width: 1100px;
     padding: 0 20px;
     margin: auto;
+  
+}
+.container .imgLogo{
+background-image: url(../images/logo.png);
+background-size: contain;
+background-repeat: no-repeat;
+width: 300px;
+height: 80px;
+display: flex;
+align-items: center;
+
+}
+.container form{
+    display: flex;
+    justify-content: center;
 }
 header {
     font-size: 28px;
@@ -27,6 +42,7 @@ header {
 header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header a {
     text-decoration: none;
@@ -62,10 +78,11 @@ ul li:hover a {
 }
 
 .banner {
-    height: 300px;
+    height: 700px;
     background: var(--lighter);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position:top;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +110,8 @@ h2 {
     margin: 30px auto;
 }
 .item {
-    color: var(--lightbg);
+    color: var(--darkbg);
+    text-align: center;
 }
 .item--image {
     width: 100%;
@@ -109,7 +127,7 @@ h2 {
 .item--color,
 .item--genre {
     font-size: 13px;
-    color: var(--lighter);
+    color: var(--bglink);
     margin-bottom: 3px;
 }
 
